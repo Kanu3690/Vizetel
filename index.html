@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | TURKEY VISA OFFICE</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/">
+            <img class="logo" src="assets/logo.webp" alt="logo" />
+        </a>
+
+        <img onclick="document.querySelector('.desktop-sidebar-items').classList.toggle('active')"
+            class="mobile-menu-icon" src="assets/menu.svg" />
+        <div class="desktop-sidebar-items">
+            <a href="#">Home Page</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Service Agreement</a>
+            <a href="#">Information</a>
+            <a href="#">Refund</a>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+    <section class="img-section">
+        <h1>In 3 Steps your e-Visa is ready!</h1>
+        <img src="assets/main-desktop-background.webp" alt="background" />
+    </section>
+
+    <section class="procedure-cards">
+        <div onclick="goTo('all-country.html')" class="procedure-card">
+            <div style="background-color: #e8e6e0;" class="procedure-card-first-child">
+                <div class="img-container">
+                    <img src="assets/edit.svg" alt="edit" />
+                </div>
+                <h1>1. Apply</h1>
+            </div>
+            <img class="main-img" src="assets/card1.webp" alt="card1" />
+        </div>
+        <div onclick="goTo('select-evisa-people-7.html')" class="procedure-card">
+            <div style="background-color: #b9d3e7;" class="procedure-card-first-child">
+                <div class="img-container">
+                    <img src="assets/camera.svg" alt="camera" />
+                </div>
+                <h1>2. Payment</h1>
+            </div>
+            <img class="main-img" src="assets/card2.webp" alt="card2" />
+        </div>
+        <div onclick="goTo('option-new.html')" class="procedure-card">
+            <div style="background-color: #eca2a7;" class="procedure-card-first-child">
+                <div class="img-container">
+                    <img src="assets/mail.svg" alt="email" />
+                </div>
+                <h1>3. Email</h1>
+            </div>
+            <img class="main-img" src="assets/card3.webp" alt="card3" />
+        </div>
+    </section>
+    <section class="procedure-cards-mobile">
+        <div onclick="goTo('all-country.html')" class="procedure-card">
+            <img class="main-img" src="assets/card1mobile.webp" alt="card1" />
+        </div>
+        <div onclick="goTo('select-evisa-people-7.html')" class="procedure-card">
+            <img class="main-img" src="assets/card2mobile.webp" alt="card2" />
+        </div>
+        <div onclick="goTo('option-new.html')" class="procedure-card">
+            <img class="main-img" src="assets/card3mobile.webp" alt="card3" />
+        </div>
+    </section>
+
+    <div class="main-bottom-link">
+        <a href="https://www.eticaret.gov.tr/siteprofil/4366135288644302/wwwevisaturkishorg">
+            https://www.eticaret.gov.tr
+        </a>
+    </div>
+
+    <footer>
+        <a href="/">
+            <img class="logo" src="assets/logo.webp" alt="logo" />
+        </a>
+        <img src="assets/qr.jpg" alt="qrcode" />
+    </footer>
+    <script defer>
+        window.goTo = (link) => {
+            const a = document.createElement("a");
+            a.href = link;
+            a.click();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.main-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.turkey-logo {
+    max-width: 200px;
+}
+
+.alphabet-container {
+    width: 100%;
+    margin: 50px 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+}
+
+.alphabet-container a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    box-shadow: 0 0 6px rgba(95, 91, 205, 0.7);
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+.alphabet-container a:hover {
+    background-color: #FF4040;
+    color: white;
+}
+
+.subtitle {
+    font-family: dinneuzeitgroteskltw01-_812426, sans-serif;
+    color: black;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .alphabet-container {
+        justify-content: center;
+    }
+
+    .alphabet-container a {
+        width: 40%;
+        border-radius: 50px;
+    }
+}
